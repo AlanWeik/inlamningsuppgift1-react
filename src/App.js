@@ -1,12 +1,14 @@
 import React from "react";
-import "./App.css";
+import { Routing } from './routes/Routing';
+import { Navigation } from "./components/Navigation";
+
 
 function App() {
   return (
     <div>
-      <h1>
-        API APP
-      </h1>
+      <Routing>
+        <Navigation />
+      </Routing>
     </div>
   )
 }
