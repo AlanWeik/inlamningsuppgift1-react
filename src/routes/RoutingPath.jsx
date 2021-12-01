@@ -1,11 +1,11 @@
 const HomeView = '/Home'
-const SecondView = '/SecondView'
-const ThirdView = '/ThirdView'
+const ClickView = '/ClickView'
+const StarWarsAPI = '/StarWarsAPI'
 const FourthView = '/FourthView'
 
 export default {
     HomeView,
-    SecondView,
-    ThirdView,
+    ClickView,
+    StarWarsAPI,
     FourthView
 }

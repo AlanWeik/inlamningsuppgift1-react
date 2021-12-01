@@ -1,9 +1,9 @@
 import React from "react"
 import { BrowserRouter, Routes as Switch, Route } from "react-router-dom"
-import { HomeView } from '../view/HomeView'
-import { SecondView } from '../view/SecondView'
-import { ThirdView } from '../view/ThirdView'
-import { FourthView } from '../view/FourthView'
+import { HomeView } from '../views/HomeView'
+import { ClickView } from '../views/ClickView'
+import { StarWarsAPI } from '../views/StarWarsAPI'
+import { FourthView } from '../views/FourthView'
 import RoutingPath from "./RoutingPath"
 
 export const Routing = ({ children }) => {
@@ -12,8 +12,8 @@ export const Routing = ({ children }) => {
             {children}
             <Switch>
                 <Route path={RoutingPath.HomeView} element={<HomeView />} />
-                <Route path={RoutingPath.SecondView} element={<SecondView />} />
-                <Route path={RoutingPath.ThirdView} element={<ThirdView />} />
+                <Route path={RoutingPath.ClickView} element={<ClickView />} />
+                <Route path={RoutingPath.StarWarsAPI} element={<StarWarsAPI />} />
                 <Route path={RoutingPath.FourthView} element={<FourthView />} />
             </Switch>
         </BrowserRouter>
