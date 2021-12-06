@@ -4,7 +4,6 @@ import { HomeView } from '../views/HomeView'
 import { ClickView } from '../views/ClickView'
 import { StarWarsAPI } from '../views/StarWarsAPI'
 import { StarWarsAPI2 } from '../views/StarWarsAPI2'
-import { FourthView } from '../views/FourthView'
 import RoutingPath from "./RoutingPath"
 
 export const Routing = ({ children }) => {
@@ -16,7 +15,6 @@ export const Routing = ({ children }) => {
                 <Route path={RoutingPath.ClickView} element={<ClickView />} />
                 <Route path={RoutingPath.StarWarsAPI} element={<StarWarsAPI />} />
                 <Route path={RoutingPath.StarWarsAPI2} element={<StarWarsAPI2 />} />
-                <Route path={RoutingPath.FourthView} element={<FourthView />} />
             </Switch>
         </BrowserRouter>
     )
