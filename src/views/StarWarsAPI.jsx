@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import CharacterData from "../components/CharacterData";
 import axios from "axios";
 
 
 export const StarWarsAPI = () => {
 
-    const [characters, setCharacters] = useState([]);
+    const [character, setCharacters] = useState([]);
     const [loading, setLoading] = useState(true)
     const [id, setId] = useState(1)
 
@@ -33,14 +34,7 @@ export const StarWarsAPI = () => {
         <div>
             <h1>Input a number to find a character</h1>
             <input type="text" value={id} onChange={e => setId(e.target.value)} />
-            <h1>{characters.name}</h1>
-            <h2>Height: {characters.height}</h2>
-            <h2>Mass: {characters.mass}</h2>
-            <h2>Hair color: {characters.hair_color}</h2>
-            <h2>Skin color: {characters.skin_color}</h2>
-            <h2>Eye color: {characters.eye_color}</h2>
-            <h2>Birth year: {characters.birth_year}</h2>
-            <h2>Gender: {characters.gender}</h2>
+            <CharacterData character={character} />
         </div>
     )
 }
