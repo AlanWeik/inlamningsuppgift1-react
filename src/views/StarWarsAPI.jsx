@@ -34,6 +34,7 @@ export const StarWarsAPI = () => {
         <div>
             <h1>Input a number to find a character</h1>
             <input type="text" value={id} onChange={e => setId(e.target.value)} />
+            <h1>THIS DATA IS DISPLAYED USING PROPS</h1>
             <CharacterData character={character} />
         </div>
     )

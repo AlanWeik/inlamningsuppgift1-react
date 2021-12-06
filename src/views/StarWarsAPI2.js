@@ -50,6 +50,7 @@ export const  StarWarsAPI2 = () => {
             <h1>Input a number & press fetch to find a character</h1>
             <input type="text" value={id} onChange={e => setId(e.target.value)} />
             <button type="button" onClick={handleClick}> Fetch </button>
+            <h1>THIS DATA IS DISPLAYED USING PROPS</h1>
             <CharacterData character={character} />
         </div>
     )
